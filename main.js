@@ -49,16 +49,19 @@ function take_snapshot()
                 document.getElementById("result_emotion_name").innerHTML=results[0].label;
                 document.getElementById("result_emotion_name2").innerHTML=results[1].label;
                 prediction_1 = results[0].label;
-                
                 speak();
                 if(results[0].label=="amazing"){
                     document.getElementById("update_emoji").innerHTML ="&#128076;";
+                    document.getElementById("lines").innerHTML = "AMAZING";
+
                 }
                 if(results[0].label=="victory"){
                     document.getElementById("update_emoji").innerHTML ="&#9996;";
+                    document.getElementById("lines").innerHTML = "VICTORY";
                 }
                 if(results[0].label=="best"){
                     document.getElementById("update_emoji").innerHTML ="&#128077;";
+                    document.getElementById("lines").innerHTML = "BEST";
                 }
                 
 
